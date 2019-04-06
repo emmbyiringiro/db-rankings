@@ -1,0 +1,53 @@
+:root {
+  --mainBlue: #002b5c;
+  --lightBlue: #e7edf2;
+  --mainYellow: #feb713;
+  --mainDark: #1a1a1a;
+  --lightDark: #666666;
+  --outline: #dcdfe2;
+  --lightWhite: #fafbfb;
+}
+
+body {
+  font-family: "Oswald" sans-serif !important;
+  background: var(--lightBlue) !important;
+  color: var(--mainDark) !important;
+}
+
+.primary-header {
+  background: var(--mainBlue) !important;
+  color: white;
+}
+
+.regulation-handler {
+  background: var(--lightWhite);
+  border-right: 1px solid var(--outline);
+  padding: 0.8rem;
+}
+.current-regulation {
+  background: var(--mainBlue);
+  color: var(--lightWhite);
+}
+.scroll {
+  height: 400px;
+  overflow: auto;
+  transition: all 0.6s 250ms ease-in-out;
+  cursor: pointer;
+}
+.regulation-menu {
+  background: var(--mainBlue);
+}
+
+li {
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.scroll ul li:hover {
+  color: var(--mainDark);
+}
+
+hr {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
