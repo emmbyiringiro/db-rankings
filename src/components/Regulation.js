@@ -6,18 +6,26 @@ function Regulation({ regulation }) {
   return (
     <RankingsConsumer>
       {value => {
-        let sortedRankings = value.sortedRankings;
-        let setCurrentRegulation = value.setCurrentRegulation;
+        const { sortBy, setActiveRegulation } = value;
+
+        const rankRegulationsBy = criteria => {
+          // regulation title contain white spaces
+          // replace them with undescore and pass by
+          // as query string sorting criteria
+          criteria = criteria.split(" ").join("_");
+          sortBy(criteria);
+        };
 
         return (
           <RegWraper>
             <div className="row">
               <div
                 onClick={e => {
-                  let regulationText = e.currentTarget.textContent;
-                  regulationText = regulationText.split(" ").join("_");
-                  sortedRankings(regulationText);
-                  setCurrentRegulation(regulationText.split("_").join(" "));
+                  let regulation = e.currentTarget.textContent;
+                  // Rank by selected regulation
+                  rankRegulationsBy(regulation);
+                  // update Active regulation
+                  setActiveRegulation(regulation);
                 }}
                 className="col-12 mx text-left p-2 mx-3 "
               >

@@ -41,6 +41,7 @@ body {
 li {
   font-weight: 500;
   list-style-type: none;
+  color: var(--mainBlue);
 }
 
 .scroll ul li:hover {
