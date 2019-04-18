@@ -2660,3 +2660,17 @@ export const rankings = [
     Resolving_Insolvency: 168
   }
 ];
+export const starterEconomy = {
+  Economy: "New Zealand",
+  Global_Rank: 1,
+  Starting_a_Business: 1,
+  Dealing_with_Construction_Permits: 6,
+  Getting_Electricity: 45,
+  Registering_Property: 1,
+  Getting_Credit: 1,
+  Protecting_Minority_Investors: 2,
+  Paying_Taxes: 10,
+  Trading_across_Borders: 60,
+  Enforcing_Contracts: 21,
+  Resolving_Insolvency: 31
+};

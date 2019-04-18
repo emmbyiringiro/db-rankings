@@ -7,10 +7,11 @@ function Regulation({ regulation }) {
     <RankingsConsumer>
       {value => {
         const { sortBy, setActiveRegulation } = value;
-
+        // Utility function to replace whites spaces with
+        // undescore ("_")
         const rankRegulationsBy = criteria => {
           // regulation title contain white spaces
-          // replace them with undescore and pass by
+          // replace them with undescore ("_") and pass by
           // as query string sorting criteria
           criteria = criteria.split(" ").join("_");
           sortBy(criteria);

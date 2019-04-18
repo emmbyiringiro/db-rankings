@@ -7,7 +7,7 @@ class Info extends Component {
         <div className="row">
           <div className="col-lg-12 col-sm-12">
             <div className="text-center regulation-handler current-regulation  font-weight-bold">
-              <h5>Why Rankings</h5>
+              <h5>Why World Economies Rankings ?</h5>
             </div>
             <div className="regulation-handler ">
               <p>

@@ -5,16 +5,7 @@ function RegulationDetails() {
   return (
     <RankingsConsumer>
       {value => {
-        const { activeRegulation, rankings } = value;
-        const getEconomyDetails = globalRank => {
-          // globalRank namecontain white spaces
-          // replace them with undescore and pass by
-          // as query string sorting criteria
-
-          const selectedEconomy = rankings.find(
-            economy => economy.Global_Rank === globalRank
-          );
-        };
+        const { activeRegulation, getEconomyDetails, rankings } = value;
 
         return (
           <div className="container">

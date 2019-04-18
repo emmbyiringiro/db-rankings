@@ -7,7 +7,7 @@ import "./App.css";
 //Components
 import Header from "./components/Header";
 import RegulationWraper from "./components/RegulationsWraper";
-//Application Data Context Manager
+//Application data context provider
 import { RankingsProvider } from "./rankingContext";
 
 class App extends Component {
